@@ -7,7 +7,7 @@ drools:
         when
             fdObject : FDRequest( bankName=="DD" && durationInYear >= 1 && durationInYear < 2);
         then
-            fdObject.setFdInterestRate("10%");
+            fdObject.setFdInterestRate("5%");
     end;
     salience 3
     rule "FD Interest Rate for DD Bank for duration more than or equal to 2 years"
